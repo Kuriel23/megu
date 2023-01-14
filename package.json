@@ -1,0 +1,38 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "fix": "npm run format:fix && npm run lint:fix",
+    "lint": "eslint ./ --ext js",
+    "lint:fix": "eslint ./ --ext js --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@discordjs/rest": "^1.3.0",
+    "chalk-advanced": "^1.0.3",
+    "discord-api-types": "^0.37.17",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "img-url-to-imgur": "^1.0.0",
+    "moment": "^2.29.4",
+    "ms-pt-br": "^2.1.4",
+    "superagent": "^8.0.3",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "2.0.20",
+    "prettier": "2.8.1"
+  }
+}
